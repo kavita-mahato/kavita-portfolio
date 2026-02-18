@@ -1,11 +1,21 @@
-import { useState } from 'react';
+import About from './components/About';
+import Skills from './components/Skills';
+import Education from './components/Education';
+import Projects from './components/Projects';
+import Experience from './components/Experience';
+import Activities from './components/Activities';
+import Contact from './components/Contact';
 
 function App() {
   return (
     <>
-      <div className='text-4xl font-bold'>
-        <h1>Tailwind Working</h1>
-      </div>
+      <About/>
+      <Skills/>
+      <Projects/>
+      <Education/>
+      <Experience/>
+      <Activities/>
+      <Contact/>
     </>
   )
 }
