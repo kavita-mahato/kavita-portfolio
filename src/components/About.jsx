@@ -35,7 +35,7 @@ const About = () => {
             ].map((item, i) => (
               <div
                 key={i}
-                className="bg-gray-800 border border-gray-700 rounded-xl p-4 text-center hover:-translate-y-1 hover:border-indigo-500 transition"
+                className="bg-gray-900 border border-gray-700 rounded-xl p-4 text-center hover:-translate-y-1 hover:border-indigo-500 transition"
               >
                 <h4 className="font-bold">{item[0]}</h4>
                 <p className="text-sm text-gray-400 mt-1">{item[1]}</p>
@@ -46,7 +46,7 @@ const About = () => {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 hover:-translate-y-1 hover:border-indigo-500 transition">
+        <div className="bg-gray-900 border border-gray-700 rounded-xl p-6 hover:-translate-y-1 hover:border-indigo-500 transition">
 
           <h3 className="text-xl font-bold mb-4">Current Focus</h3>
 
