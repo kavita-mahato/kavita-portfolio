@@ -19,7 +19,7 @@ const BackToTop = () => {
       onClick={() =>
         window.scrollTo({ top: 0, behavior: "smooth" })
       }
-      className="fixed bottom-6 right-6 bg-indigo-600 px-4 py-2 rounded-lg"
+      className="fixed bottom-6 right-6 bg-indigo-600 px-4 py-2 rounded-lg cursor-pointer"
     >
       ↑ Top
     </button>

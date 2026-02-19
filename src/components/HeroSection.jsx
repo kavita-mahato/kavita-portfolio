@@ -17,7 +17,6 @@ import githubIcon from "../assets/icons/icons8-github-logo.svg";
 
 const HeroSection = () => {
 
-  
   const plain = "Hi, I'm ";
   const name = "Kavita Mahato";
 
@@ -42,7 +41,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="py-20 text-gray-200">
+    <section id="top" className="py-20 text-gray-200">
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
 
         {/* LEFT */}
@@ -71,6 +70,10 @@ const HeroSection = () => {
 
             <a
               href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }}
               className="bg-linear-to-r from-indigo-600 to-cyan-400 text-black font-bold px-5 py-2 rounded-lg shadow hover:brightness-110 transition"
             >
               Get In Touch
