@@ -8,8 +8,11 @@ import Experience from './components/Experience';
 import Activities from './components/Activities';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import useLazyLoad from './hooks/useLazyLoad';
+import BackToTop from './components/BackToTop';
 
 function App() {
+  useLazyLoad();
   return (
     <>
       <Navbar/>
@@ -22,6 +25,7 @@ function App() {
       <Activities/>
       <Contact/>
       <Footer/>
+      <BackToTop/>
     </>
   )
 }

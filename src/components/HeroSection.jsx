@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,14 +8,39 @@ import {
 
 import {
   faLinkedinIn,
-  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
 import kavitaImg from "../assets/kavita.jpg";
-import leetcodeIcon from "../assets/leetcode-custom.svg";
-import gfgIcon from "../assets/icons8-geeksforgeeks.svg";
+import leetcodeIcon from "../assets/icons/leetcode-custom.svg";
+import gfgIcon from "../assets/icons/icons8-geeksforgeeks.svg";
+import githubIcon from "../assets/icons/icons8-github-logo.svg";
 
 const HeroSection = () => {
+
+  
+  const plain = "Hi, I'm ";
+  const name = "Kavita Mahato";
+
+  const [text, setText] = useState("");
+  const [cursor, setCursor] = useState(true);
+
+  useEffect(() => {
+    let i = 0;
+    const full = plain + name;
+
+    const timer = setInterval(() => {
+      setText(full.slice(0, i + 1));
+      i++;
+
+      if (i === full.length) {
+        clearInterval(timer);
+        setTimeout(() => setCursor(false), 800);
+      }
+    }, 80);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className="py-20 text-gray-200">
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
@@ -24,8 +49,11 @@ const HeroSection = () => {
         <div>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-3">
-            Hi, I'm Kavita Mahato
-            <span className="ml-1 text-indigo-500 animate-pulse">|</span>
+            {text.slice(0, plain.length)}
+            <span className="text-indigo-400">
+              {text.slice(plain.length)}
+            </span>
+            {cursor && <span className="animate-pulse">|</span>}
           </h1>
 
           <p className="text-indigo-400 font-semibold mb-2">
@@ -70,7 +98,7 @@ const HeroSection = () => {
               },
               {
                 link: "https://github.com/kavita-mahato",
-                icon: <FontAwesomeIcon icon={faGithub} />,
+                icon: <img src={githubIcon} alt="leetcode" className="w-5 h-5" />,
               },
               {
                 link: "https://leetcode.com/u/kavita-mahato/",

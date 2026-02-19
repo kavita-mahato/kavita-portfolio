@@ -9,24 +9,22 @@ import {
   faTrophy,
   faUserCheck,
   faPlug,
-  faDatabase,
   faLightbulb,
   faGraduationCap,
   faPuzzlePiece,
 } from "@fortawesome/free-solid-svg-icons";
 
-import {
-  faJs,
-  faNodeJs,
-  faGitAlt,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
-
 // local icons
-import javaIcon from "../assets/java.svg";
-import mongoIcon from "../assets/mongodb-seeklogo.svg";
-import postmanIcon from "../assets/postman-icon.svg";
-import leetcodeIcon from "../assets/leetcode.svg";
+import javaIcon from "../assets/icons/java.svg";
+import mongoIcon from "../assets/icons/mongodb-seeklogo.svg";
+import postmanIcon from "../assets/icons/postman-icon.svg";
+import leetcodeIcon from "../assets/icons/leetcode.svg";
+import javascriptIcon from "../assets/icons/javascript.svg";
+import nodeIcon from "../assets/icons/node-js-48.png";
+import reactIcon from "../assets/icons/react-native.svg";
+import gitIcon from "../assets/icons/git-logo-96.png";
+import mongooseIcon from "../assets/icons/database-50.png";
+import githubIcon from "../assets/icons/github-logo.svg";
 
 const skillsData = [
   {
@@ -36,7 +34,7 @@ const skillsData = [
       [javaIcon, "Java"],
       ["https://img.icons8.com/color/48/c-programming.png", "C"],
       ["https://img.icons8.com/color/48/c-plus-plus-logo.png", "C++"],
-      [faJs, "JavaScript", "fa"],
+      [javascriptIcon, "JavaScript"],
     ],
   },
   {
@@ -45,26 +43,27 @@ const skillsData = [
     items: [
       ["https://img.icons8.com/color/48/html-5--v1.png", "HTML"],
       ["https://img.icons8.com/color/48/css3.png", "CSS"],
-      [faJs, "JavaScript", "fa"],
+      [javascriptIcon, "JavaScript"],
+      [reactIcon, "React"],
     ],
   },
   {
     title: "Backend",
     icon: faServer,
     items: [
-      [faNodeJs, "Node.js", "fa"],
+      [nodeIcon, "Node.js"],
       ["https://img.icons8.com/ios/50/express-js.png", "Express.js"],
       [mongoIcon, "MongoDB"],
       [faPlug, "REST APIs", "fa"],
-      [faDatabase, "Mongoose", "fa"],
+      [mongooseIcon, "Mongoose"],
     ],
   },
   {
     title: "Developer Tools",
     icon: faTools,
     items: [
-      [faGitAlt, "Git", "fa"],
-      [faGithub, "GitHub", "fa"],
+      [gitIcon, "Git"],
+      [githubIcon, "GitHub"],
       ["https://img.icons8.com/color/48/visual-studio-code-2019.png", "VS Code"],
       [postmanIcon, "Postman"],
     ],

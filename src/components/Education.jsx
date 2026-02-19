@@ -35,7 +35,7 @@ const Education = () => {
                 <h3 className="text-xl font-semibold">
                   B.Tech. in Information Technology
                 </h3>
-
+                
                 <p className="text-sm text-gray-400">
                   UCET, Vinoba Bhave University
                 </p>

@@ -1,6 +1,34 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+  const [active, setActive] = useState("");
+  
+  const toggleNav = () => setOpen(!open);
+  const closeNav = () => setOpen(false);
+  const sectionIds = [
+    "about","skills","experience","projects",
+    "education","activities","contact"
+  ];
+  
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActive(entry.target.id);
+        }
+      });
+    }, { threshold: 0.5 });
+  
+    sectionIds.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+  
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div>
         <header className='sticky top-0 z-1000 bg-[rgba(11,13,16,0.7)] backdrop-blur-md border-b border-white/10'>
@@ -11,10 +39,9 @@ const Navbar = () => {
               </a>
 
               <button
-                aria-expanded="false"
-                aria-controls="primaryNav"
-                aria-label="Toggle navigation"
-                className="hidden bg-transparent border-0 p-2 cursor-pointer"
+                onClick={toggleNav}
+                aria-expanded={open}
+                className="md:hidden"
               >
                 <span className="block w-6 h-0.5 bg-(--text) my-1.25" />
                 <span className="block w-6 h-0.5 bg-(--text) my-1.25" />
@@ -34,8 +61,10 @@ const Navbar = () => {
                     ].map((item) => (
                       <li key={item}>
                         <a
+                          key={item}
                           href={`#${item}`}
-                          className="font-medium text-(--muted) no-underline hover:text-(--text) transition-colors"
+                          onClick={closeNav}
+                          className="block py-2"
                         >
                           {item.charAt(0).toUpperCase() + item.slice(1)}
                         </a>
