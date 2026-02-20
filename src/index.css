@@ -87,3 +87,53 @@ h3 {
   0%, 50% { opacity: 1; }
   51%, 100% { opacity: 0; }
 }
+
+/* ============================================
+   SMOOTH SCROLL REVEAL SYSTEM
+   ============================================ */
+
+/* 1. The Base State (Hidden) */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  filter: blur(10px);
+  transition: 
+    opacity 0.8s cubic-bezier(0.2, 0, 0.2, 1),
+    transform 0.8s cubic-bezier(0.2, 0, 0.2, 1),
+    filter 0.8s cubic-bezier(0.2, 0, 0.2, 1);
+  will-change: opacity, transform; /* Hardware acceleration */
+}
+
+/* 2. The Active State (Visible) */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0px);
+}
+
+/* 3. Staggered Delays (Optional)
+   Apply these classes in your components for a "wave" effect
+   e.g. <div className="reveal delay-200"> 
+*/
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-500 { transition-delay: 500ms; }
+
+/* 4. Custom Directional Reveals (Optional) */
+.reveal-left { transform: translateX(-30px); }
+.reveal-right { transform: translateX(30px); }
+
+/* ============================================
+   PREMIUM POLISH: GRAIN OVERLAY
+   ============================================ */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 9999;
+}
