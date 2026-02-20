@@ -41,7 +41,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section id="top" className="py-12 md:py-20 text-gray-200">
+    <section id="top" className="py-16 md:py-20 text-gray-200">
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
 
         {/* LEFT */}
