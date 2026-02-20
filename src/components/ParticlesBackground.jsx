@@ -28,6 +28,13 @@ const ParticlesBackground = () => {
     },
     particles: {
       color: { value: "#6366f1" }, // Tailwind Indigo-500
+      number: {
+        value: 200, 
+        density: {
+          enable: true,
+          area: 800, 
+        },
+      },
       links: {
         color: "#6366f1",
         distance: 150,
@@ -43,7 +50,6 @@ const ParticlesBackground = () => {
         straight: false,
         outModes: { default: "out" },
       },
-      number: { density: { enable: true, area: 800 }, value: 80 },
       opacity: { value: 0.5 },
       shape: { type: "circle" },
       size: { value: { min: 1, max: 3 } },
@@ -55,7 +61,7 @@ const ParticlesBackground = () => {
     return (
       <Particles
         id="tsparticles"
-        className="absolute inset-0 -z-10" // Positions it behind your content
+        className="absolute inset-0 -z-10" // Positions it behind the content
         options={particlesConfig}
       />
     );
