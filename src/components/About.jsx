@@ -18,11 +18,7 @@ const About = () => {
 
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">About Me</h2>
 
-          <p className="text-gray-400 mb-6 leading-relaxed text-sm sm:text-base">
-            First-year B.Tech student in Information Technology. I focus on
-            strong fundamentals, clean code, and practical projects. Currently
-            sharpening Java DSA while building modern, responsive UIs with
-            HTML, CSS, and JavaScript.
+          <p className="text-gray-400 mb-6 leading-relaxed text-sm sm:text-base">Dedicated B.Tech Information Technology student focused on Data Structures & Algorithms and MERN Stack Development. I prioritize strong fundamentals, clean code, and building scalable full-stack applications. Currently enhancing my problem-solving skills through Java-based DSA while developing modern, responsive web applications using MongoDB, Express.js, React, and Node.js.
           </p>
 
           {/* Stats */}
