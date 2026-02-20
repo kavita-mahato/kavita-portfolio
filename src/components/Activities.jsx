@@ -27,7 +27,7 @@ const Activities = () => {
         <div className="grid md:grid-cols-2 gap-8">
 
           {/* ---------- NSS ---------- */}
-          <div className="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:scale-[1.02] transition">
+          <div className="bg-slate-900/80 border border-gray-800 rounded-xl p-6 hover:scale-[1.02] transition">
 
             <div className="flex gap-4 mb-4">
 
@@ -90,7 +90,7 @@ const Activities = () => {
           </div>
 
           {/* ---------- NCC ---------- */}
-          <div className="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:scale-[1.02] transition">
+          <div className="bg-slate-900/80 border border-gray-800 rounded-xl p-6 hover:scale-[1.02] transition">
 
             <div className="flex gap-4 mb-4">
 

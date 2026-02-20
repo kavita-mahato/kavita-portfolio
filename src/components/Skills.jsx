@@ -103,7 +103,7 @@ const Skills = () => {
           {skillsData.map((category, i) => (
             <div
               key={i}
-              className="bg-gray-900 border border-gray-700 rounded-xl p-6 hover:-translate-y-1 hover:border-indigo-500 transition"
+              className="bg-slate-900/80 border border-gray-700 rounded-xl p-6 hover:-translate-y-1 hover:border-indigo-500 transition"
             >
 
               {/* Header */}

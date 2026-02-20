@@ -15,7 +15,7 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-import {lmsImg1, lmsImg2, lmsImg3, devtinderImg1, devtinderImg2, devtinderImg3, foodieImg1, foodieImg2, foodieImg3, taskmateImg1, taskmateImg2} from "../assets/projects/projects";
+import { lmsImg1, lmsImg2, lmsImg3, devtinderImg1, devtinderImg2, devtinderImg3, foodieImg1, foodieImg2, foodieImg3, taskmateImg1, taskmateImg2 } from "../assets/projects/projects";
 import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
 
 const projects = [
@@ -90,7 +90,7 @@ const projects = [
       taskmateImg1,
       taskmateImg2,
       "https://placehold.co/600x400/1f2937/a5b4fc?text=TaskMate"
-    ], 
+    ],
     icon: faTasks,
     title: "TaskMate",
     link: "https://kavita-mahato.github.io/task-manager/",
@@ -128,17 +128,17 @@ const ProjectCard = ({ project }) => {
   }, [project.images.length, isPaused]);
 
   return (
-    <article className="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:-translate-y-2 hover:border-indigo-500 transition duration-300 group overflow-hidden flex flex-col">
-      
+    <article className="bg-slate-900/80 border border-gray-800 rounded-xl p-6 hover:-translate-y-2 hover:border-indigo-500 transition duration-300 group overflow-hidden flex flex-col">
+
       {/* Outer Carousel Wrapper */}
-      <div 
+      <div
         className="relative w-[calc(100%+3rem)] h-60 mb-6 -mx-6 -mt-6 overflow-hidden border-b border-gray-800 shrink-0 group/carousel"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
       >
-        
+
         {/* The Sliding Track */}
-        <div 
+        <div
           className="flex w-full h-full transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentImg * 100}%)` }}
         >
@@ -151,7 +151,7 @@ const ProjectCard = ({ project }) => {
             />
           ))}
         </div>
-        
+
         {/* Gradient overlay (placed outside the sliding track so it stays still) */}
         <div className="absolute inset-0 bg-linear-to-t from-gray-900 via-transparent to-transparent opacity-90 pointer-events-none z-0"></div>
 
@@ -180,9 +180,8 @@ const ProjectCard = ({ project }) => {
                 <button
                   key={idx}
                   onClick={() => setCurrentImg(idx)}
-                  className={`w-2 h-2 rounded-full transition-all ${
-                    currentImg === idx ? "bg-indigo-400 w-4" : "bg-white/50 hover:bg-white"
-                  }`}
+                  className={`w-2 h-2 rounded-full transition-all ${currentImg === idx ? "bg-indigo-400 w-4" : "bg-white/50 hover:bg-white"
+                    }`}
                   aria-label={`Go to image ${idx + 1}`}
                 />
               ))}
@@ -210,7 +209,7 @@ const ProjectCard = ({ project }) => {
               <FontAwesomeIcon icon={faExternalLinkAlt} />
               Live Demo
             </a>
-            <a href={project.github} className="text-[14px] font-semibold text-violet-600 bg-violet-600/10 px-2 py-1 rounded-md border border-violet-600/20"><FontAwesomeIcon icon={faGithub}/> GitHub</a>
+            <a href={project.github} className="text-[14px] font-semibold text-violet-600 bg-violet-600/10 px-2 py-1 rounded-md border border-violet-600/20"><FontAwesomeIcon icon={faGithub} /> GitHub</a>
             <span>{project.date}</span>
           </div>
         </div>

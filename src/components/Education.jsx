@@ -25,7 +25,7 @@ const Education = () => {
         <div className="grid md:grid-cols-2 gap-8">
 
           {/* ---------- BTECH ---------- */}
-          <div className="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:scale-[1.02] transition">
+          <div className="bg-slate-900/80 border border-gray-800 rounded-xl p-6 hover:scale-[1.02] transition">
 
             <div className="flex gap-4 mb-4">
 
@@ -35,7 +35,7 @@ const Education = () => {
                 <h3 className="text-xl font-semibold">
                   B.Tech. in Information Technology
                 </h3>
-                
+
                 <div className="flex justify-between items-center gap-3">
                   <span className="text-sm text-[14px] font-semibold text-indigo-600 bg-indigo-600/10 px-2 py-1 rounded-md border border-indigo-600/20">
                     UCET, Vinoba Bhave University
@@ -93,7 +93,7 @@ const Education = () => {
           </div>
 
           {/* ---------- 12TH ---------- */}
-          <div className="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:scale-[1.02] transition">
+          <div className="bg-slate-900/80 border border-gray-800 rounded-xl p-6 hover:scale-[1.02] transition">
 
             <div className="flex gap-4 mb-4">
 

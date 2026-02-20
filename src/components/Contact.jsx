@@ -13,7 +13,7 @@ const Contact = () => {
           Get In Touch
         </h2>
 
-        <div className="bg-[#0b1220] border border-gray-800 rounded-xl p-8 hover:scale-[1.02] transition">
+        <div className="bg-slate-900/80 border border-gray-800 rounded-xl p-8 hover:scale-[1.02] transition">
 
           <p className="text-gray-400 mb-8 leading-relaxed">
             I’m always open to discussing new opportunities, collaborations,

@@ -8,12 +8,10 @@ import Experience from './components/Experience';
 import Activities from './components/Activities';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import useLazyLoad from './hooks/useLazyLoad';
 import BackToTop from './components/BackToTop';
 import ParticlesBackground from "./components/ParticlesBackground";
 
 function App() {
-  useLazyLoad();
   return (
     <>
       <ParticlesBackground />
