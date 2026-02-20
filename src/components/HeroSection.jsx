@@ -41,13 +41,13 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section id="top" className="py-16 md:py-20 text-gray-200">
-      <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+    <section id="top" className="py-12 md:py-25 text-gray-200">
+      <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-[60%_40%] gap-8 md:gap-12 items-center">
 
         {/* LEFT */}
         <div className="order-2 md:order-1 text-center md:text-left">
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-3">
             {text.slice(0, plain.length)}
             <span className="text-indigo-400">
               {text.slice(plain.length)}
@@ -55,7 +55,7 @@ const HeroSection = () => {
             {cursor && <span className="animate-pulse">|</span>}
           </h1>
 
-          <p className="text-indigo-400 font-semibold mb-2 text-sm sm:text-base">
+          <p className="text-indigo-400 font-semibold mb-2 text-sm sm:text-lg">
             MERN Stack Developer & IT Student
           </p>
 
@@ -141,7 +141,7 @@ const HeroSection = () => {
 
         {/* RIGHT IMAGE */}
         <div className="flex justify-center order-1 md:order-2 mb-6 md:mb-0">
-          <div className="w-56 h-56 sm:w-72 sm:h-72 rounded-full border-4 border-indigo-600 overflow-hidden shadow-xl hover:scale-105 transition">
+          <div className="w-56 h-56 sm:w-80 sm:h-80 rounded-full border-4 border-indigo-600 overflow-hidden shadow-xl hover:scale-105 transition">
             <img
               src={kavitaImg}
               alt="Kavita Mahato"
