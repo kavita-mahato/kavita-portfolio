@@ -26,7 +26,7 @@ const projects = [
       lmsImg3
     ],
     icon: faGraduationCap,
-    title: "Edemy (Learning Management System}",
+    title: "Edemy (Learning Management System)",
     link: "https://lms-platform-inky.vercel.app",
     github: "https://github.com/kavita-mahato/lms-platform.git",
     date: "Feb '26",
