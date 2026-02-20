@@ -15,16 +15,17 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 // local icons
-import javaIcon from "../assets/icons/java.svg";
-import mongoIcon from "../assets/icons/mongodb-seeklogo.svg";
-import postmanIcon from "../assets/icons/postman-icon.svg";
-import leetcodeIcon from "../assets/icons/leetcode.svg";
-import javascriptIcon from "../assets/icons/javascript.svg";
-import nodeIcon from "../assets/icons/node-js-48.png";
-import reactIcon from "../assets/icons/react-native.svg";
-import gitIcon from "../assets/icons/git-logo-96.png";
-import mongooseIcon from "../assets/icons/database-50.png";
-import githubIcon from "../assets/icons/github-logo.svg";
+import {
+  databaseIcon,
+  gitIcon,
+  githubLogo,
+  javaIcon,
+  javascriptIcon,
+  nodejsIcon,
+  reactIcon,
+  mongodbIcon,
+  postmanIcon
+} from "../assets/icons/icons";
 
 const skillsData = [
   {
@@ -51,11 +52,11 @@ const skillsData = [
     title: "Backend",
     icon: faServer,
     items: [
-      [nodeIcon, "Node.js"],
+      [nodejsIcon, "Node.js"],
       ["https://img.icons8.com/ios/50/express-js.png", "Express.js"],
-      [mongoIcon, "MongoDB"],
+      [mongodbIcon, "MongoDB"],
       [faPlug, "REST APIs", "fa"],
-      [mongooseIcon, "Mongoose"],
+      [databaseIcon, "Mongoose"],
     ],
   },
   {
@@ -63,7 +64,7 @@ const skillsData = [
     icon: faTools,
     items: [
       [gitIcon, "Git"],
-      [githubIcon, "GitHub"],
+      [githubLogo, "GitHub"],
       ["https://img.icons8.com/color/48/visual-studio-code-2019.png", "VS Code"],
       [postmanIcon, "Postman"],
     ],
@@ -73,7 +74,7 @@ const skillsData = [
     icon: faTrophy,
     items: [
       ["https://img.icons8.com/color/48/GeeksforGeeks.png", "GeeksforGeeks"],
-      [leetcodeIcon, "LeetCode"],
+      ["https://img.icons8.com/?size=50&id=wDGo581Ea5Nf&format=png", "LeetCode"],
     ],
   },
   {
