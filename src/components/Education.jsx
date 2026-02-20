@@ -36,7 +36,7 @@ const Education = () => {
                   B.Tech. in Information Technology
                 </h3>
 
-                <div className="flex justify-between items-center gap-3">
+                <div className="flex items-center gap-3">
                   <span className="text-sm text-[14px] font-semibold text-indigo-600 bg-indigo-600/10 px-2 py-1 rounded-md border border-indigo-600/20">
                     UCET, Vinoba Bhave University
                   </span>
@@ -104,7 +104,7 @@ const Education = () => {
                   12th (Intermediate) – CBSE
                 </h3>
 
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-3">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
                   <p className="text-xs sm:text-sm font-semibold text-indigo-600 bg-indigo-600/10 px-2 py-1 rounded-md border border-indigo-600/20 inline-block w-fit">
                     Jawahar Navodaya Vidyalaya
                   </p>

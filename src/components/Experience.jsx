@@ -33,7 +33,7 @@ const Experience = () => {
                   Front End Web Development Intern
                 </h3>
 
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-3">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
                   <span className="text-xs sm:text-sm font-semibold text-indigo-600 bg-indigo-600/10 px-2 py-1 rounded-md border border-indigo-600/20 inline-block w-fit">
                     Edunet Foundation
                   </span>
@@ -74,7 +74,7 @@ const Experience = () => {
                   Full Stack Web Developer Trainee
                 </h3>
 
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-3">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
                   <span className="text-xs sm:text-sm font-semibold text-indigo-600 bg-indigo-600/10 px-2 py-1 rounded-md border border-indigo-600/20 inline-block w-fit">
                     iHUB DivyaSampark @ IIT Roorkee
                   </span>
