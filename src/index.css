@@ -56,6 +56,26 @@ h3 {
 }
 
 /* ============================================
+   MOBILE RESPONSIVE ENHANCEMENTS
+   ============================================ */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+    margin: 0 0 16px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  /* Ensure proper spacing on mobile */
+  section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* ============================================
    LAZY LOADING ANIMATIONS & CLASSES
    ============================================ */
 @keyframes fadeInUp {

@@ -41,13 +41,13 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section id="top" className="py-20 text-gray-200">
-      <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+    <section id="top" className="py-12 md:py-20 text-gray-200">
+      <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
 
         {/* LEFT */}
-        <div>
+        <div className="order-2 md:order-1 text-center md:text-left">
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-3">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3">
             {text.slice(0, plain.length)}
             <span className="text-indigo-400">
               {text.slice(plain.length)}
@@ -55,26 +55,35 @@ const HeroSection = () => {
             {cursor && <span className="animate-pulse">|</span>}
           </h1>
 
-          <p className="text-indigo-400 font-semibold mb-2">
+          <p className="text-indigo-400 font-semibold mb-2 text-sm sm:text-base">
             MERN Stack Developer & IT Student
           </p>
 
-          <p className="text-gray-400 mb-6 max-w-xl">
+          <p className="text-gray-400 mb-6 max-w-xl mx-auto md:mx-0 text-sm sm:text-base">
             Passionate about developing efficient and scalable web solutions
             using modern technologies. Currently pursuing B.Tech in IT while
             enhancing my skills in DSA and MERN development.
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-wrap gap-3 mb-4">
+          <div className="flex flex-wrap gap-3 mb-4 justify-center md:justify-start">
 
             <a
               href="#contact"
               onClick={(e) => {
                 e.preventDefault();
-                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                const headerOffset = 80;
+                const element = document.getElementById('contact');
+                if (element) {
+                  const elementPosition = element.getBoundingClientRect().top;
+                  const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                  window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                  });
+                }
               }}
-              className="bg-linear-to-r from-indigo-600 to-cyan-400 text-black font-bold px-5 py-2 rounded-lg shadow hover:brightness-110 transition"
+              className="bg-gradient-to-r from-indigo-600 to-cyan-400 text-black font-bold px-5 py-2 rounded-lg shadow hover:brightness-110 transition text-sm sm:text-base"
             >
               Get In Touch
             </a>
@@ -83,7 +92,7 @@ const HeroSection = () => {
               href="https://drive.google.com/file/d/1JKkU89Zj_yDXYY7dGEL5Wl-zDzZFdBnp/view?usp=drivesdk"
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-gray-600 px-5 py-2 rounded-lg hover:bg-gray-800 transition flex items-center gap-2"
+              className="border border-gray-600 px-5 py-2 rounded-lg hover:bg-gray-800 transition flex items-center gap-2 text-sm sm:text-base"
             >
               <FontAwesomeIcon icon={faDownload} />
               Resume
@@ -92,7 +101,7 @@ const HeroSection = () => {
           </div>
 
           {/* Social Icons */}
-          <div className="flex gap-3">
+          <div className="flex gap-3 justify-center md:justify-start">
 
             {[
               {
@@ -101,7 +110,7 @@ const HeroSection = () => {
               },
               {
                 link: "https://github.com/kavita-mahato",
-                icon: <img src={githubIcon} alt="leetcode" className="w-5 h-5" />,
+                icon: <img src={githubIcon} alt="github" className="w-5 h-5" />,
               },
               {
                 link: "https://leetcode.com/u/kavita-mahato/",
@@ -131,8 +140,8 @@ const HeroSection = () => {
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="flex justify-center">
-          <div className="w-72 h-72 rounded-full border-4 border-indigo-600 overflow-hidden shadow-xl hover:scale-105 transition">
+        <div className="flex justify-center order-1 md:order-2 mb-6 md:mb-0">
+          <div className="w-56 h-56 sm:w-72 sm:h-72 rounded-full border-4 border-indigo-600 overflow-hidden shadow-xl hover:scale-105 transition">
             <img
               src={kavitaImg}
               alt="Kavita Mahato"

@@ -14,15 +14,15 @@ import { faJava, faHtml5, faCss3Alt, faJs } from "@fortawesome/free-brands-svg-i
 
 const Education = () => {
   return (
-    <section id="education" className="py-20 text-gray-200">
+    <section id="education" className="py-12 md:py-20 text-gray-200">
 
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
-        <h2 className="text-3xl font-bold text-center mb-12">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">
           Education
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
 
           {/* ---------- BTECH ---------- */}
           <div className="bg-slate-900/80 border border-gray-800 rounded-xl p-6 hover:scale-[1.02] transition">
@@ -93,23 +93,23 @@ const Education = () => {
           </div>
 
           {/* ---------- 12TH ---------- */}
-          <div className="bg-slate-900/80 border border-gray-800 rounded-xl p-6 hover:scale-[1.02] transition">
+          <div className="bg-slate-900/80 border border-gray-800 rounded-xl p-4 sm:p-6 hover:scale-[1.02] transition">
 
-            <div className="flex gap-4 mb-4">
+            <div className="flex gap-3 sm:gap-4 mb-4">
 
-              <FontAwesomeIcon icon={faGraduationCap} className="text-indigo-400 text-xl mt-1" />
+              <FontAwesomeIcon icon={faGraduationCap} className="text-indigo-400 text-lg sm:text-xl mt-1 shrink-0" />
 
-              <div>
-                <h3 className="text-xl font-semibold">
+              <div className="flex-1 min-w-0">
+                <h3 className="text-lg sm:text-xl font-semibold mb-2">
                   12th (Intermediate) – CBSE
                 </h3>
 
-                <div className="flex justify-between items-center gap-3">
-                  <p className="text-sm text-[14px] font-semibold text-indigo-600 bg-indigo-600/10 px-2 py-1 rounded-md border border-indigo-600/20">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-3">
+                  <p className="text-xs sm:text-sm font-semibold text-indigo-600 bg-indigo-600/10 px-2 py-1 rounded-md border border-indigo-600/20 inline-block w-fit">
                     Jawahar Navodaya Vidyalaya
                   </p>
 
-                  <p className="text-sm text-gray-500">
+                  <p className="text-xs sm:text-sm text-gray-500">
                     82.2% • 2016 – 2023
                   </p>
                 </div>

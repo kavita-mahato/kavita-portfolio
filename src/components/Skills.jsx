@@ -90,15 +90,15 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-16 text-gray-200">
+    <section id="skills" className="py-12 md:py-16 text-gray-200">
 
       <div className="max-w-6xl mx-auto px-4">
 
-        <h2 className="text-3xl font-bold mb-10 text-center">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-10 text-center">
           Skills
         </h2>
 
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
 
           {skillsData.map((category, i) => (
             <div

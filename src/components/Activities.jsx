@@ -16,32 +16,32 @@ import {
 
 const Activities = () => {
   return (
-    <section id="activities" className="py-20 text-gray-200">
+    <section id="activities" className="py-12 md:py-20 text-gray-200">
 
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
-        <h2 className="text-3xl font-bold text-center mb-12">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">
           Extracurricular
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
 
           {/* ---------- NSS ---------- */}
-          <div className="bg-slate-900/80 border border-gray-800 rounded-xl p-6 hover:scale-[1.02] transition">
+          <div className="bg-slate-900/80 border border-gray-800 rounded-xl p-4 sm:p-6 hover:scale-[1.02] transition">
 
-            <div className="flex gap-4 mb-4">
+            <div className="flex gap-3 sm:gap-4 mb-4">
 
               <FontAwesomeIcon
                 icon={faHandsHelping}
-                className="text-indigo-400 text-xl mt-1"
+                className="text-indigo-400 text-lg sm:text-xl mt-1 shrink-0"
               />
 
-              <div>
-                <h3 className="text-xl font-semibold">
+              <div className="flex-1 min-w-0">
+                <h3 className="text-lg sm:text-xl font-semibold mb-2">
                   NSS Volunteer
                 </h3>
 
-                <div className="flex flex-wrap items-center gap-3 text-sm text-gray-400">
+                <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-xs sm:text-sm text-gray-400">
 
                   <a
                     href="https://nss.gov.in/"
@@ -90,21 +90,21 @@ const Activities = () => {
           </div>
 
           {/* ---------- NCC ---------- */}
-          <div className="bg-slate-900/80 border border-gray-800 rounded-xl p-6 hover:scale-[1.02] transition">
+          <div className="bg-slate-900/80 border border-gray-800 rounded-xl p-4 sm:p-6 hover:scale-[1.02] transition">
 
-            <div className="flex gap-4 mb-4">
+            <div className="flex gap-3 sm:gap-4 mb-4">
 
               <FontAwesomeIcon
                 icon={faMedal}
-                className="text-indigo-400 text-xl mt-1"
+                className="text-indigo-400 text-lg sm:text-xl mt-1 shrink-0"
               />
 
-              <div>
-                <h3 className="text-xl font-semibold">
+              <div className="flex-1 min-w-0">
+                <h3 className="text-lg sm:text-xl font-semibold mb-2">
                   NCC Cadet — “A” Certificate Holder
                 </h3>
 
-                <div className="flex flex-wrap items-center gap-3 text-sm text-gray-400">
+                <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-xs sm:text-sm text-gray-400">
 
                   <a
                     href="https://nccindia.gov.in/"

@@ -230,11 +230,11 @@ const ProjectCard = ({ project }) => {
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 text-gray-200">
-      <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-14">Projects</h2>
+    <section id="projects" className="py-12 md:py-20 text-gray-200">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-14">Projects</h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
           {projects.map((project, i) => (
             <ProjectCard key={i} project={project} />
           ))}

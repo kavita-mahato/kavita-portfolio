@@ -5,15 +5,15 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 text-gray-200">
+    <section id="contact" className="py-12 md:py-20 text-gray-200">
 
-      <div className="max-w-4xl mx-auto px-6 text-center">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
 
-        <h2 className="text-3xl font-bold mb-8">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">
           Get In Touch
         </h2>
 
-        <div className="bg-slate-900/80 border border-gray-800 rounded-xl p-8 hover:scale-[1.02] transition">
+        <div className="bg-slate-900/80 border border-gray-800 rounded-xl p-6 sm:p-8 hover:scale-[1.02] transition">
 
           <p className="text-gray-400 mb-8 leading-relaxed">
             I’m always open to discussing new opportunities, collaborations,

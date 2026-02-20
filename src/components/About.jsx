@@ -9,16 +9,16 @@ import {
 
 const About = () => {
   return (
-    <section id="about" className="py-16 text-gray-200">
+    <section id="about" className="py-12 md:py-16 text-gray-200">
 
-      <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-[1.2fr_0.8fr] gap-8">
+      <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-[1.2fr_0.8fr] gap-6 md:gap-8">
 
         {/* LEFT SIDE */}
         <div>
 
-          <h2 className="text-3xl font-bold mb-4">About Me</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">About Me</h2>
 
-          <p className="text-gray-400 mb-6 leading-relaxed">
+          <p className="text-gray-400 mb-6 leading-relaxed text-sm sm:text-base">
             First-year B.Tech student in Information Technology. I focus on
             strong fundamentals, clean code, and practical projects. Currently
             sharpening Java DSA while building modern, responsive UIs with
@@ -26,7 +26,7 @@ const About = () => {
           </p>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
 
             {[
               ["10+ Projects", "Hands-on learning through real builds"],
@@ -37,8 +37,8 @@ const About = () => {
                 key={i}
                 className="bg-slate-900/80 border border-gray-700 rounded-xl p-4 text-center hover:-translate-y-1 hover:border-indigo-500 transition"
               >
-                <h4 className="font-bold">{item[0]}</h4>
-                <p className="text-sm text-gray-400 mt-1">{item[1]}</p>
+                <h4 className="font-bold text-sm sm:text-base">{item[0]}</h4>
+                <p className="text-xs sm:text-sm text-gray-400 mt-1">{item[1]}</p>
               </div>
             ))}
 
@@ -46,11 +46,11 @@ const About = () => {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="bg-slate-900/80 border border-gray-700 rounded-xl p-6 hover:-translate-y-1 hover:border-indigo-500 transition">
+        <div className="bg-slate-900/80 border border-gray-700 rounded-xl p-4 sm:p-6 hover:-translate-y-1 hover:border-indigo-500 transition">
 
-          <h3 className="text-xl font-bold mb-4">Current Focus</h3>
+          <h3 className="text-lg sm:text-xl font-bold mb-4">Current Focus</h3>
 
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-2 sm:gap-3">
 
             {[
               [faLayerGroup, "Java DSA"],
@@ -60,7 +60,7 @@ const About = () => {
             ].map(([icon, text], i) => (
               <span
                 key={i}
-                className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-700 border border-gray-600 text-sm font-semibold hover:border-indigo-500 hover:bg-gray-600 transition"
+                className="flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gray-700 border border-gray-600 text-xs sm:text-sm font-semibold hover:border-indigo-500 hover:bg-gray-600 transition"
               >
                 <FontAwesomeIcon
                   icon={icon}
