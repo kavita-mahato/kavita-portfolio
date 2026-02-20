@@ -30,7 +30,7 @@ const About = () => {
 
             {[
               ["10+ Projects", "Hands-on learning through real builds"],
-              ["50+ DSA", "Problems solved across platforms"],
+              ["200+ DSA", "Problems solved across platforms"],
               ["Frontend • Backend", "From UI to APIs"],
             ].map((item, i) => (
               <div
