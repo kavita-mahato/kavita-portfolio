@@ -1,16 +1,40 @@
-# React + Vite
+# 🚀 My Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek, responsive portfolio website built to showcase my projects, skills, and journey as a developer.
 
-Currently, two official plugins are available:
+[Link to Live Site Here]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🛠 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Category           | Tools & Languages                          |
+| ------------------ | ------------------------------------------ |
+| **Frontend** | React.js, Tailwind CSS      |
+| **Deployment** | Vercel / Netlify                           |
+| **Tools** | Git, GitHub                       |
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Folder Structure
+``` bash
+├── public/          # Static assets (images, icons, etc.)
+├── src/
+│   ├── components/  # Reusable UI components
+│   ├── hooks/       # Custom React hooks
+│   ├── pages/       # Main views and routing
+│   ├── styles/      # Global CSS and Tailwind config
+│   └── utils/       # Helper functions
+└── package.json     # Project dependencies and scripts
+```
+
+## 🤝 Contributing
+While this is my personal site, I’m always open to feedback! If you spot a bug or have a suggestion, feel free to open an issue or submit a pull request.
+
+### 📬 Contact
+Let's connect!
+
+LinkedIn: https://www.linkedin.com/in/kavita-mahato
+
+Email: kavitamahato0835@gmail.com
+
