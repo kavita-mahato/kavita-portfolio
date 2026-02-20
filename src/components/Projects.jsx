@@ -16,6 +16,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import {lmsImg1, lmsImg2, lmsImg3, devtinderImg1, devtinderImg2, devtinderImg3, foodieImg1, foodieImg2, foodieImg3, taskmateImg1, taskmateImg2} from "../assets/projects/projects";
+import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
 
 const projects = [
   {
@@ -26,7 +27,8 @@ const projects = [
     ],
     icon: faGraduationCap,
     title: "Edemy (Learning Management System}",
-    link: "https://lms-platform-inky.vercel.app/",
+    link: "https://lms-platform-inky.vercel.app",
+    github: "https://github.com/kavita-mahato/lms-platform.git",
     date: "Feb '26",
     points: [
       {
@@ -47,8 +49,9 @@ const projects = [
     ],
     icon: faUsers,
     title: "DevTinder",
-    link: "https://dev-tinder-application.vercel.app/",
-    date: "Dec '25",
+    link: "https://dev-tinder-application.vercel.app",
+    github: "https://github.com/kavita-mahato/dev-tinder.git",
+    date: "Jan '26",
     points: [
       {
         icon: faCheckCircle,
@@ -68,8 +71,9 @@ const projects = [
     ],
     icon: faUtensils,
     title: "FOODIE",
-    link: "https://foodie-react-app-nine.vercel.app/",
-    date: "Nov '25",
+    link: "https://foodie-react-app-nine.vercel.app",
+    github: "https://github.com/kavita-mahato/foodie-react-app.git",
+    date: "Dec '25",
     points: [
       {
         icon: faMobileAlt,
@@ -84,11 +88,13 @@ const projects = [
   {
     images: [
       taskmateImg1,
-      taskmateImg2
+      taskmateImg2,
+      "https://placehold.co/600x400/1f2937/a5b4fc?text=TaskMate"
     ], 
     icon: faTasks,
     title: "TaskMate",
-    link: "https://kavita-mahato.github.io/Task_Manager/",
+    link: "https://kavita-mahato.github.io/task-manager/",
+    github: "https://github.com/kavita-mahato/task-manager.git",
     date: "Sept '25",
     points: [
       {
@@ -199,11 +205,12 @@ const ProjectCard = ({ project }) => {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1 hover:text-indigo-400 transition"
+              className="flex items-center gap-1 hover:text-indigo-400 transition text-[14px] font-semibold text-indigo-600 bg-indigo-600/10 px-2 py-1 rounded-md border border-indigo-600/20"
             >
               <FontAwesomeIcon icon={faExternalLinkAlt} />
               Live Demo
             </a>
+            <a href={project.github} className="text-[14px] font-semibold text-violet-600 bg-violet-600/10 px-2 py-1 rounded-md border border-violet-600/20"><FontAwesomeIcon icon={faGithub}/> GitHub</a>
             <span>{project.date}</span>
           </div>
         </div>

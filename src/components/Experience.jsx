@@ -33,13 +33,15 @@ const Experience = () => {
                   Front End Web Development Intern
                 </h3>
 
-                <p className="text-sm text-gray-400">
-                  Edunet Foundation
-                </p>
+                <div className="flex justify-between items-center gap-3">
+                  <span className="text-sm text-[14px] font-semibold text-indigo-600 bg-indigo-600/10 px-2 py-1 rounded-md border border-indigo-600/20">
+                    Edunet Foundation
+                  </span>
 
-                <p className="text-sm text-gray-500">
-                  Aug ’25 – Sep ’25 • Remote
-                </p>
+                  <span className="text-sm text-gray-500">
+                    Aug ’25 – Sep ’25 • Remote
+                  </span>
+                </div>
               </div>
 
             </div>
@@ -72,9 +74,13 @@ const Experience = () => {
                   Full Stack Web Developer Trainee
                 </h3>
 
-                <p className="text-sm text-gray-400">
-                  iHUB DivyaSampark @ IIT Roorkee
-                </p>
+                <div className="flex justify-between items-center gap-3">
+                  <span className="text-sm text-[14px] font-semibold text-indigo-600 bg-indigo-600/10 px-2 py-1 rounded-md border border-indigo-600/20">
+                    iHUB DivyaSampark @ IIT Roorkee
+                  </span>
+                  <span className="text-sm text-gray-500">Oct'24</span>
+                </div>
+
               </div>
 
             </div>

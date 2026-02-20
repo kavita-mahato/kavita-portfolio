@@ -36,13 +36,15 @@ const Education = () => {
                   B.Tech. in Information Technology
                 </h3>
                 
-                <p className="text-sm text-gray-400">
-                  UCET, Vinoba Bhave University
-                </p>
+                <div className="flex justify-between items-center gap-3">
+                  <span className="text-sm text-[14px] font-semibold text-indigo-600 bg-indigo-600/10 px-2 py-1 rounded-md border border-indigo-600/20">
+                    UCET, Vinoba Bhave University
+                  </span>
 
-                <p className="text-sm text-gray-500">
-                  CGPA: 7.83 • Sep ’24 – Present
-                </p>
+                  <span className="text-sm text-gray-500">
+                    CGPA: 7.83 • Sep ’24 – Present
+                  </span>
+                </div>
               </div>
 
             </div>
@@ -102,13 +104,15 @@ const Education = () => {
                   12th (Intermediate) – CBSE
                 </h3>
 
-                <p className="text-sm text-gray-400">
-                  Jawahar Navodaya Vidyalaya
-                </p>
+                <div className="flex justify-between items-center gap-3">
+                  <p className="text-sm text-[14px] font-semibold text-indigo-600 bg-indigo-600/10 px-2 py-1 rounded-md border border-indigo-600/20">
+                    Jawahar Navodaya Vidyalaya
+                  </p>
 
-                <p className="text-sm text-gray-500">
-                  82.2% • 2016 – 2023
-                </p>
+                  <p className="text-sm text-gray-500">
+                    82.2% • 2016 – 2023
+                  </p>
+                </div>
               </div>
 
             </div>

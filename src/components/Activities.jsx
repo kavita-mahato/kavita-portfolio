@@ -47,7 +47,7 @@ const Activities = () => {
                     href="https://nss.gov.in/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 hover:text-indigo-400 transition"
+                    className="flex items-center gap-1 hover:text-indigo-400 transition text-[14px] font-semibold text-indigo-600 bg-indigo-600/10 px-2 py-1 rounded-md border border-indigo-600/20"
                   >
                     <FontAwesomeIcon icon={faExternalLinkAlt} />
                     National Service Scheme
@@ -110,7 +110,7 @@ const Activities = () => {
                     href="https://nccindia.gov.in/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 hover:text-indigo-400 transition"
+                    className="flex items-center gap-1 hover:text-indigo-400 transition text-[14px] font-semibold text-indigo-600 bg-indigo-600/10 px-2 py-1 rounded-md border border-indigo-600/20"
                   >
                     <FontAwesomeIcon icon={faExternalLinkAlt} />
                     National Cadet Corps
