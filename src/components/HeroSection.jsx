@@ -10,7 +10,7 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 
-import kavitaImg from "../assets/profile.jpeg";
+import kavitaImg from "../assets/profile1.jpeg";
 import leetcodeIcon from "../assets/icons/leetcode-custom.svg";
 import gfgIcon from "../assets/icons/icons8-geeksforgeeks.svg";
 import githubIcon from "../assets/icons/icons8-github-logo.svg";
