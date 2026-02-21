@@ -108,7 +108,7 @@ const Skills = () => {
 
               {/* Header */}
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-gradient-to-r from-indigo-600 to-cyan-400 text-black">
+                <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-linear-to-r from-indigo-600 to-cyan-400 text-black">
                   <FontAwesomeIcon icon={category.icon} />
                 </div>
 

@@ -34,9 +34,9 @@ const Navbar = () => {
   const navItems = [
     { id: "about", label: "About", icon: <FaUser /> },
     { id: "skills", label: "Skills", icon: <FaCode /> },
-    { id: "experience", label: "Experience", icon: <FaBriefcase /> },
     { id: "projects", label: "Projects", icon: <FaLaptopCode /> },
     { id: "education", label: "Education", icon: <FaGraduationCap /> },
+    { id: "experience", label: "Experience", icon: <FaBriefcase /> },
     { id: "activities", label: "Activities", icon: <FaAward /> },
     { id: "contact", label: "Contact", icon: <FaEnvelope /> },
   ];
@@ -82,14 +82,14 @@ const Navbar = () => {
 
   return (
     <>
-      <header className='sticky top-0 z-[1000] bg-[rgba(11,13,16,0.7)] backdrop-blur-md border-b border-white/10'>
-        <div className="w-[95%] max-w-[1400px] mx-auto flex items-center justify-between py-3.5 px-4">
+      <header className='sticky top-0 z-1000 bg-[rgba(11,13,16,0.7)] backdrop-blur-md border-b border-white/10'>
+        <div className="w-[95%] max-w-350 mx-auto flex items-center justify-between py-3.5 px-4">
           <a 
             href="#top" 
             onClick={(e) => handleNavClick(e, 'top')}
-            className="inline-flex items-center gap-2.5 no-underline text-white hover:opacity-80 transition-opacity z-[1001] relative"
+            className="inline-flex items-center gap-2.5 no-underline text-white hover:opacity-80 transition-opacity z-1001 relative"
           >
-            <span className="w-9 h-9 grid place-items-center rounded-full bg-gradient-to-br from-blue-500 to-purple-600 font-bold text-lg text-[#0b0d10]"> K </span>
+            <span className="w-9 h-9 grid place-items-center rounded-full bg-linear-to-br from-blue-500 to-purple-600 font-bold text-lg text-[#0b0d10]"> K </span>
             <span className="font-bold tracking-[0.2px] text-lg">PORTFOLIO</span>
           </a>
 
@@ -99,7 +99,7 @@ const Navbar = () => {
               e.stopPropagation();
               toggleNav();
             }}
-            className="lg:hidden text-white text-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded p-2 transition-colors hover:bg-white/10 z-[1001] relative flex items-center justify-center min-w-[40px] min-h-[40px]"
+            className="lg:hidden text-white text-2xl focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded p-2 transition-colors hover:bg-white/10 z-1001 relative flex items-center justify-center min-w-10 min-h-10"
             aria-label="Toggle navigation menu"
             aria-expanded={open}
             type="button"
@@ -131,13 +131,13 @@ const Navbar = () => {
       {/* Mobile Navigation Menu - Outside header for proper z-index */}
       {open && (
         <div 
-          className="lg:hidden fixed inset-0 bg-black/50 z-[999] top-[60px]"
+          className="lg:hidden fixed inset-0 bg-black/50 z-999 top-15"
           onClick={closeNav}
           style={{ pointerEvents: 'auto' }}
         />
       )}
       <nav 
-        className={`lg:hidden fixed top-[60px] left-0 right-0 bg-[rgba(11,13,16,0.98)] backdrop-blur-md border-b border-white/10 transition-all duration-300 ease-in-out z-[1001] ${
+        className={`lg:hidden fixed top-15 left-0 right-0 bg-[rgba(11,13,16,0.98)] backdrop-blur-md border-b border-white/10 transition-all duration-300 ease-in-out z-1001 ${
           open ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-full pointer-events-none'
         }`}
         style={{ 

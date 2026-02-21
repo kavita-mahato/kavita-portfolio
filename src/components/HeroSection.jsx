@@ -10,7 +10,7 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 
-import kavitaImg from "../assets/kavita.jpg";
+import kavitaImg from "../assets/profile.jpeg";
 import leetcodeIcon from "../assets/icons/leetcode-custom.svg";
 import gfgIcon from "../assets/icons/icons8-geeksforgeeks.svg";
 import githubIcon from "../assets/icons/icons8-github-logo.svg";
@@ -83,7 +83,7 @@ const HeroSection = () => {
                   });
                 }
               }}
-              className="bg-gradient-to-r from-indigo-600 to-cyan-400 text-black font-bold px-5 py-2 rounded-lg shadow hover:brightness-110 transition text-sm sm:text-base"
+              className="bg-linear-to-r from-indigo-600 to-cyan-400 text-black font-bold px-5 py-2 rounded-lg shadow hover:brightness-110 transition text-sm sm:text-base"
             >
               Get In Touch
             </a>
